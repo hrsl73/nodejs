@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Welcome to My Homepage</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,88 +11,68 @@
             padding: 0;
             background-color: #f4f4f9;
             color: #333;
-            display: flex;
-        }
-        .sidebar {
-            width: 250px;
-            background-color: #0056b3;
-            color: white;
-            height: 100vh;
-            padding: 20px;
-            position: fixed;
-        }
-        .sidebar h2 {
-            text-align: center;
-        }
-        .sidebar a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-            margin: 5px 0;
-            font-weight: bold;
-        }
-        .sidebar a:hover {
-            background-color: #007BFF;
-        }
-        .main-content {
-            margin-left: 270px;
-            padding: 20px;
-            flex: 1;
         }
         header {
             background-color: #007BFF;
             color: white;
-            padding: 15px;
+            padding: 10px 20px;
             text-align: center;
         }
-        .card {
-            background: white;
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 20px 0;
+            text-align: center;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 10px 0;
             position: fixed;
             bottom: 0;
-            width: calc(100% - 250px);
-            left: 250px;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <div class="sidebar">
-        <h2>Dashboard</h2>
-        <a href="overview">Overview</a>
-        <a href="analytics">Analytics</a>
-        <a href="users">Users</a>
-        <a href="settings">Settings</a>
-        <a href="logout">Logout</a>
-    </div>
-    <div class="main-content">
-        <header>
-            <h1>Welcome to Your Dashboard</h1>
-        </header>
-        <div class="card">
-            <h2>Overview</h2>
-            <p>Welcome to your dashboard. Here you can track your activities, view analytics, manage users, and update settings.</p>
-        </div>
-        <div class="card">
-            <h2>Analytics</h2>
-            <p>Monitor your performance and track key metrics.</p>
-        </div>
-        <div class="card">
-            <h2>Users</h2>
-            <p>Manage user accounts and roles.</p>
-        </div>
-    </div>
+    <header>
+        <h1>welcome to sagun</h1>
+        <p>Your one-stop destination for learning and exploration</p>
+    </header>
+    <nav>
+        <a href="about">About</a>
+        <a href="services">Services</a>
+        <a href="register">register</a>
+        <a href="login">login</a>
+    </nav>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing personalized learning experiences for everyone.</p>
+    </section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>Explore our wide range of resources tailored to your learning needs.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us at <a href="mailto:info@example.com">info@example.com</a>.</p>
+    </section>
     <footer>
-        <p>&copy; 2025 Dashboard. All rights reserved.</p>
+        <p>&copy; 2025 My Homepage. All rights reserved.</p>
     </footer>
 </body>
 </html>
